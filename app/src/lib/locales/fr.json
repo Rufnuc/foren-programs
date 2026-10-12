@@ -1,0 +1,111 @@
+{
+  "app": {
+    "name": "Prutet",
+    "tagline": "Un endroit calme pour mettre vos preuves à l’abri."
+  },
+  "nav": {
+    "label": "Navigation principale",
+    "home": "Accueil",
+    "evidence": "Preuves",
+    "proof": "Générer une preuve",
+    "settings": "Réglages"
+  },
+  "home": {
+    "tagline": "Capturer, chiffrer, ancrer — sans révéler qui vous êtes.",
+    "privacyNote": "Tout est chiffré sur cet appareil avant de partir ailleurs."
+  },
+  "onboarding": {
+    "title": "Configurer Prutet",
+    "intro1": "Prutet génère une nouvelle identité en chaîne, sans lien avec votre nom, e-mail ou téléphone.",
+    "intro2": "Vous choisirez un code qui protège tout ce qui est conservé sur cet appareil.",
+    "bullet1": "Pas de comptes, pas de serveurs, pas de profils.",
+    "bullet2": "Les preuves sont chiffrées avant de quitter l’appareil.",
+    "bullet3": "Vous pouvez détruire cette identité à tout moment.",
+    "prefsHelp": "Choisissez la langue, la région et le contraste. Modifiable plus tard.",
+    "passcodeHelp": "Au moins huit caractères. Pas de récupération — seul votre code ouvre le coffre.",
+    "passcode": "Code",
+    "passcodeConfirm": "Répétez le code",
+    "passcodeTooShort": "Utilisez au moins huit caractères.",
+    "passcodeMismatch": "Les codes ne correspondent pas.",
+    "passcodeWarn": "Si vous oubliez ce code, le coffre de cet appareil est irrécupérable.",
+    "create": "Créer mon coffre"
+  },
+  "lock": {
+    "title": "Bon retour",
+    "subtitle": "Saisissez votre code pour déverrouiller le coffre.",
+    "passcode": "Code",
+    "unlock": "Déverrouiller",
+    "error": "Ce code n’a pas fonctionné."
+  },
+  "evidence": {
+    "title": "Preuves",
+    "record": "Enregistrer une preuve",
+    "recorded": "Enregistré et ancré.",
+    "lockedFirst": "Déverrouillez d’abord le coffre.",
+    "empty": "Pas encore de preuves. Appuyez sur Enregistrer si nécessaire.",
+    "localOnly": "Local uniquement",
+    "previewAlt": "Aperçu de la preuve chiffrée",
+    "contentHash": "Empreinte du contenu",
+    "nonce": "Nonce",
+    "anchorTx": "Transaction d’ancrage",
+    "anchorPda": "Compte d’ancrage",
+    "cid": "CID IPFS",
+    "makeProof": "Créer une preuve",
+    "revoke": "Révoquer et supprimer",
+    "phase": {
+      "capturing": "Lecture du fichier…",
+      "encrypting": "Chiffrement…",
+      "anchoring": "Ancrage sur Solana…",
+      "pinning": "Épinglage sur IPFS…"
+    }
+  },
+  "proof": {
+    "title": "Générer une preuve",
+    "intro": "Partagez seulement ce que vous choisissez. La preuve montre qu’un élément possède ces propriétés sans révéler l’élément ni votre identité.",
+    "pickEvidence": "Choisissez une preuve dans",
+    "slotMin": "Slot minimum",
+    "slotMax": "Slot maximum",
+    "lat": "Latitude",
+    "lon": "Longitude",
+    "slotOutOfRange": "Le slot d’ancrage est hors de l’intervalle choisi.",
+    "generate": "Générer la preuve",
+    "generating": "Génération…",
+    "result": "Preuve",
+    "publicSignals": "Signaux publics (partageables) :",
+    "download": "Télécharger la preuve"
+  },
+  "settings": {
+    "title": "Réglages",
+    "preferences": "Préférences",
+    "region": "Région",
+    "highContrast": "Mode contraste élevé",
+    "identity": "Identité",
+    "publicKey": "Clé publique",
+    "lock": "Verrouiller maintenant",
+    "burnTitle": "Détruire cette identité",
+    "burnBody": "Cela détruit définitivement les clés et preuves de cet appareil. Les empreintes ancrées restent sur Solana mais ne peuvent plus vous être liées. Action irréversible.",
+    "burnStart": "Détruire l’identité",
+    "burnConfirm1": "Êtes-vous sûr·e ? Tout sur cet appareil sera effacé.",
+    "burnContinue": "Continuer",
+    "burnTypePrompt": "Tapez BURN pour confirmer",
+    "burnFinal": "Détruire"
+  },
+  "emergency": {
+    "buttonLabel": "Ouvrir les options d’urgence",
+    "confirmTitle": "Besoin d’aide tout de suite ?",
+    "confirmBody": "Touchez le numéro pour appeler les secours locaux, ou ouvrez une ressource d’aide.",
+    "localNumber": "Numéro local d’urgence"
+  },
+  "common": {
+    "continue": "Continuer",
+    "cancel": "Annuler",
+    "close": "Fermer",
+    "loading": "Travail en cours…",
+    "saving": "Enregistrement…",
+    "saved": "Enregistré",
+    "error": "Un problème est survenu. Réessayez."
+  },
+  "legal": {
+    "erasure": "Vous avez droit à l’effacement. Détruire votre identité supprime les clés qui vous lient aux preuves ancrées sur cet appareil."
+  }
+}

@@ -1,0 +1,14 @@
+node_modules
+**/node_modules
+**/.next
+**/dist
+**/target
+.git
+.github
+*.log
+.env
+.env.*
+!.env.example
+app/public/zk
+circuits/build
+circuits/keys

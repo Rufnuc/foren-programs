@@ -1,0 +1,93 @@
+# Local-only full stack for Prutet.
+#
+#   solana   — single-node test validator (RPC on :8899)
+#   ipfs     — kubo daemon (RPC on :5001, gateway on :8080)
+#   relay    — Express zero-knowledge relay (HTTP on :4000)
+#   app      — Next.js PWA frontend (HTTP on :3000)
+#
+# This file is for development only. Do not deploy as-is.
+
+version: "3.9"
+
+services:
+  solana:
+    image: solanalabs/solana:v1.18.17
+    container_name: prutet-solana
+    command: >
+      solana-test-validator
+        --rpc-port 8899
+        --rpc-bind-address 0.0.0.0
+        --ledger /ledger
+        --reset
+    ports:
+      - "8899:8899"
+      - "8900:8900"
+    volumes:
+      - solana-ledger:/ledger
+    healthcheck:
+      test: ["CMD", "curl", "-fs", "-X", "POST", "-H", "Content-Type: application/json",
+             "-d", "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"getHealth\"}",
+             "http://127.0.0.1:8899"]
+      interval: 10s
+      timeout: 3s
+      retries: 30
+
+  ipfs:
+    image: ipfs/kubo:v0.29.0
+    container_name: prutet-ipfs
+    ports:
+      - "4001:4001"
+      - "5001:5001"
+      - "8080:8080"
+    volumes:
+      - ipfs-data:/data/ipfs
+    healthcheck:
+      test: ["CMD", "ipfs", "id"]
+      interval: 10s
+      timeout: 3s
+      retries: 10
+
+  relay:
+    build:
+      context: .
+      dockerfile: relay/Dockerfile
+    container_name: prutet-relay
+    environment:
+      RELAY_PORT: "4000"
+      RELAY_HOST: "0.0.0.0"
+      PINNING_PROVIDER: "local"
+      IPFS_API_URL: "http://ipfs:5001"
+      LOG_LEVEL: "info"
+      MAX_BLOB_BYTES: "20000000"
+    ports:
+      - "4000:4000"
+    depends_on:
+      ipfs:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://127.0.0.1:4000/livez"]
+      interval: 15s
+      timeout: 3s
+      retries: 5
+
+  app:
+    build:
+      context: .
+      dockerfile: app/Dockerfile
+    container_name: prutet-app
+    environment:
+      NEXT_PUBLIC_RELAY_URL: "http://localhost:4000"
+      NEXT_PUBLIC_SOLANA_CLUSTER: "localnet"
+      NEXT_PUBLIC_SOLANA_RPC_URL: "http://localhost:8899"
+      NEXT_PUBLIC_DEFAULT_LOCALE: "en"
+    ports:
+      - "3000:3000"
+    depends_on:
+      relay:
+        condition: service_healthy
+      solana:
+        condition: service_healthy
+
+volumes:
+  solana-ledger:
+  ipfs-data:

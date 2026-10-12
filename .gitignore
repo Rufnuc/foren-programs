@@ -1,0 +1,55 @@
+# Rust / Anchor
+target/
+**/*.rs.bk
+.anchor/
+test-ledger/
+.crates/
+
+# Node
+node_modules/
+.yarn/
+.pnp.*
+yarn-error.log
+npm-debug.log
+.next/
+out/
+dist/
+build/
+
+# Env + secrets
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+keypairs/
+!keypairs/.gitkeep
+
+# Solana CLI
+.config/solana/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# ZK build artefacts
+circuits/build/
+circuits/ptau/
+circuits/keys/
+*.zkey
+*.r1cs
+*.wasm
+*.sym
+
+# Solana signing keys — never commit
+.solana-keypair.json
+**/.solana-keypair.json
+
+# Nested/aux (published separately)
+relay/
+.claude/

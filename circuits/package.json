@@ -1,0 +1,23 @@
+{
+  "name": "@prutet/circuits",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Prutet — circom circuits and Groth16 build pipeline.",
+  "main": "scripts/index.ts",
+  "scripts": {
+    "build": "bash scripts/build.sh",
+    "clean": "rm -rf build keys ptau",
+    "export-vk": "ts-node scripts/export_vk_solana.ts keys/evidence_zk_vk.json keys/evidence_zk_vk_solana.json",
+    "prove:example": "ts-node scripts/prove_example.ts"
+  },
+  "dependencies": {
+    "circomlib": "^2.0.5",
+    "circomlibjs": "^0.1.7",
+    "snarkjs": "^0.7.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}

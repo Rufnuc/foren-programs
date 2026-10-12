@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* -------------------------------------------------------------------------
+ * Prutet palette.
+ *
+ * Default: muted, calm, low-contrast surfaces. Sage + warm taupe accents.
+ * High-contrast mode: triggered by `data-contrast="high"` on <html>. Pure
+ * black on pure white with bright focus rings. Text remains the same size.
+ * ------------------------------------------------------------------------- */
+
+:root {
+  --prutet-bg:      245 244 240;   /* warm parchment */
+  --prutet-surface: 255 254 251;
+  --prutet-ink:      40  44  44;   /* near-black, slight green undertone */
+  --prutet-muted:   112 116 112;
+  --prutet-sage:    142 164 138;
+  --prutet-taupe:   170 154 134;
+  --prutet-accent:  101 130  98;   /* deeper sage */
+  --prutet-danger:  168  74  74;
+  --prutet-focus:   101 130  98;
+}
+
+html[data-contrast="high"] {
+  --prutet-bg:      255 255 255;
+  --prutet-surface: 255 255 255;
+  --prutet-ink:       0   0   0;
+  --prutet-muted:    32  32  32;
+  --prutet-sage:      0  90  60;
+  --prutet-taupe:    60  40  20;
+  --prutet-accent:    0  90  60;
+  --prutet-danger:  170   0   0;
+  --prutet-focus:     0   0 220;
+}
+
+html, body {
+  background-color: rgb(var(--prutet-bg));
+  color: rgb(var(--prutet-ink));
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: var(--font-sans, system-ui), sans-serif;
+}
+
+/* Visible focus ring everywhere — non-negotiable for stress-use accessibility. */
+*:focus-visible {
+  outline: 2px solid rgb(var(--prutet-focus));
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Reduce motion when the user prefers it. */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* Generic typographic helper used across pages. */
+.prose-prutet h1 { font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; }
+.prose-prutet h2 { font-size: 1.125rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+.prose-prutet p  { line-height: 1.6; color: rgb(var(--prutet-muted)); }

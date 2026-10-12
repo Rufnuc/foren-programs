@@ -1,0 +1,111 @@
+{
+  "app": {
+    "name": "Prutet",
+    "tagline": "Un lugar tranquilo para resguardar pruebas."
+  },
+  "nav": {
+    "label": "Navegación principal",
+    "home": "Inicio",
+    "evidence": "Pruebas",
+    "proof": "Generar prueba",
+    "settings": "Ajustes"
+  },
+  "home": {
+    "tagline": "Captura, cifra y ancla — sin revelar quién eres.",
+    "privacyNote": "Todo se cifra en este dispositivo antes de salir a cualquier otro lugar."
+  },
+  "onboarding": {
+    "title": "Configurar Prutet",
+    "intro1": "Prutet genera una identidad nueva en cadena que no está vinculada a tu nombre, correo o teléfono.",
+    "intro2": "Elegirás un código de acceso que protege todo lo guardado en este dispositivo.",
+    "bullet1": "Sin cuentas, sin servidores, sin perfiles.",
+    "bullet2": "Las pruebas se cifran antes de salir del dispositivo.",
+    "bullet3": "Puedes destruir esta identidad cuando quieras.",
+    "prefsHelp": "Elige idioma, región y contraste. Podrás cambiarlos más tarde.",
+    "passcodeHelp": "Usa al menos ocho caracteres. No hay recuperación — solo tu código abre la bóveda.",
+    "passcode": "Código",
+    "passcodeConfirm": "Repite el código",
+    "passcodeTooShort": "Usa al menos ocho caracteres.",
+    "passcodeMismatch": "Los códigos no coinciden.",
+    "passcodeWarn": "Si olvidas este código, la bóveda de este dispositivo no se puede recuperar.",
+    "create": "Crear mi bóveda"
+  },
+  "lock": {
+    "title": "Bienvenida de nuevo",
+    "subtitle": "Introduce tu código para abrir la bóveda.",
+    "passcode": "Código",
+    "unlock": "Abrir",
+    "error": "Ese código no funcionó."
+  },
+  "evidence": {
+    "title": "Pruebas",
+    "record": "Registrar prueba",
+    "recorded": "Guardada y anclada.",
+    "lockedFirst": "Abre la bóveda primero.",
+    "empty": "Aún no hay pruebas. Pulsa Registrar cuando lo necesites.",
+    "localOnly": "Solo local",
+    "previewAlt": "Vista previa de la prueba cifrada",
+    "contentHash": "Hash del contenido",
+    "nonce": "Nonce",
+    "anchorTx": "Transacción de anclaje",
+    "anchorPda": "Cuenta de anclaje",
+    "cid": "CID de IPFS",
+    "makeProof": "Crear prueba",
+    "revoke": "Revocar y borrar",
+    "phase": {
+      "capturing": "Leyendo archivo…",
+      "encrypting": "Cifrando…",
+      "anchoring": "Anclando en Solana…",
+      "pinning": "Fijando en IPFS…"
+    }
+  },
+  "proof": {
+    "title": "Generar prueba",
+    "intro": "Comparte solo lo que elijas. La prueba demuestra que existe un elemento con estas propiedades sin revelar el elemento ni quién eres.",
+    "pickEvidence": "Elige una prueba en",
+    "slotMin": "Slot mínimo",
+    "slotMax": "Slot máximo",
+    "lat": "Latitud",
+    "lon": "Longitud",
+    "slotOutOfRange": "El slot de anclaje está fuera del intervalo elegido.",
+    "generate": "Generar prueba",
+    "generating": "Generando prueba…",
+    "result": "Prueba",
+    "publicSignals": "Señales públicas (seguras para compartir):",
+    "download": "Descargar prueba"
+  },
+  "settings": {
+    "title": "Ajustes",
+    "preferences": "Preferencias",
+    "region": "Región",
+    "highContrast": "Alto contraste",
+    "identity": "Identidad",
+    "publicKey": "Clave pública",
+    "lock": "Bloquear bóveda ahora",
+    "burnTitle": "Destruir esta identidad",
+    "burnBody": "Esto borra de forma permanente las claves y pruebas de este dispositivo. Los hashes anclados permanecen en Solana pero ya no podrán vincularse a ti. No se puede deshacer.",
+    "burnStart": "Destruir identidad",
+    "burnConfirm1": "¿Seguro? Todo en este dispositivo será borrado.",
+    "burnContinue": "Continuar",
+    "burnTypePrompt": "Escribe BURN para confirmar",
+    "burnFinal": "Destruir ahora"
+  },
+  "emergency": {
+    "buttonLabel": "Abrir opciones de emergencia",
+    "confirmTitle": "¿Necesitas ayuda ahora?",
+    "confirmBody": "Pulsa el número para llamar a tu línea local de emergencia, o abre un recurso de apoyo.",
+    "localNumber": "Número local de emergencia"
+  },
+  "common": {
+    "continue": "Continuar",
+    "cancel": "Cancelar",
+    "close": "Cerrar",
+    "loading": "Trabajando…",
+    "saving": "Guardando…",
+    "saved": "Guardado",
+    "error": "Algo salió mal. Inténtalo de nuevo."
+  },
+  "legal": {
+    "erasure": "Tienes derecho al borrado. Destruir tu identidad elimina las claves que te vinculan a las pruebas ancladas en este dispositivo."
+  }
+}

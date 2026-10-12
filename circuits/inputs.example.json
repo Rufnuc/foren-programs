@@ -1,0 +1,13 @@
+{
+  "_comment": "Example inputs for evidence_zk.circom. All values are decimal strings (BigInt). Use scripts/prove.ts to derive these from natural inputs (32-byte SHA-256, slot, lat/lon).",
+  "slot_min": "12000000",
+  "slot_max": "13000000",
+  "location_commitment": "REPLACE_WITH_Poseidon(lat, lon, loc_salt)",
+  "nullifier": "REPLACE_WITH_Poseidon(content_hash_lo, content_hash_hi)",
+  "content_hash_lo": "0",
+  "content_hash_hi": "0",
+  "slot": "12345678",
+  "lat": "51507400",
+  "lon": "-127500",
+  "loc_salt": "0"
+}

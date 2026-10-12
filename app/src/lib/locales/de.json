@@ -1,0 +1,111 @@
+{
+  "app": {
+    "name": "Prutet",
+    "tagline": "Ein ruhiger Ort, um Beweise sicher aufzubewahren."
+  },
+  "nav": {
+    "label": "Hauptnavigation",
+    "home": "Start",
+    "evidence": "Beweise",
+    "proof": "Beweis erzeugen",
+    "settings": "Einstellungen"
+  },
+  "home": {
+    "tagline": "Erfassen, verschlüsseln, verankern — ohne Ihre Identität preiszugeben.",
+    "privacyNote": "Alles wird auf diesem Gerät verschlüsselt, bevor es es verlässt."
+  },
+  "onboarding": {
+    "title": "Prutet einrichten",
+    "intro1": "Prutet erzeugt eine neue On-Chain-Identität, die nicht mit Ihrem Namen, Ihrer E-Mail oder Telefonnummer verknüpft ist.",
+    "intro2": "Sie wählen einen Passcode, der alles auf diesem Gerät schützt.",
+    "bullet1": "Keine Konten, keine Server, keine Profile.",
+    "bullet2": "Beweise werden vor dem Verlassen des Geräts verschlüsselt.",
+    "bullet3": "Sie können diese Identität jederzeit zerstören.",
+    "prefsHelp": "Wählen Sie Sprache, Region und Kontrast. Später änderbar.",
+    "passcodeHelp": "Mindestens acht Zeichen. Keine Wiederherstellung — nur Ihr Passcode öffnet den Tresor.",
+    "passcode": "Passcode",
+    "passcodeConfirm": "Passcode wiederholen",
+    "passcodeTooShort": "Verwenden Sie mindestens acht Zeichen.",
+    "passcodeMismatch": "Die Passcodes stimmen nicht überein.",
+    "passcodeWarn": "Wenn Sie den Passcode vergessen, ist der Tresor auf diesem Gerät nicht wiederherstellbar.",
+    "create": "Tresor anlegen"
+  },
+  "lock": {
+    "title": "Willkommen zurück",
+    "subtitle": "Geben Sie Ihren Passcode ein, um den Tresor zu öffnen.",
+    "passcode": "Passcode",
+    "unlock": "Entsperren",
+    "error": "Dieser Passcode hat nicht funktioniert."
+  },
+  "evidence": {
+    "title": "Beweise",
+    "record": "Beweis aufnehmen",
+    "recorded": "Gespeichert und verankert.",
+    "lockedFirst": "Bitte zuerst entsperren.",
+    "empty": "Noch keine Beweise. Tippen Sie bei Bedarf auf Aufnehmen.",
+    "localOnly": "Nur lokal",
+    "previewAlt": "Vorschau des verschlüsselten Beweises",
+    "contentHash": "Inhalts-Hash",
+    "nonce": "Nonce",
+    "anchorTx": "Verankerungstransaktion",
+    "anchorPda": "Verankerungskonto",
+    "cid": "IPFS-CID",
+    "makeProof": "Beweis erstellen",
+    "revoke": "Widerrufen und löschen",
+    "phase": {
+      "capturing": "Datei wird gelesen…",
+      "encrypting": "Verschlüsseln…",
+      "anchoring": "Verankerung auf Solana…",
+      "pinning": "An IPFS anheften…"
+    }
+  },
+  "proof": {
+    "title": "Beweis erzeugen",
+    "intro": "Teilen Sie nur, was Sie auswählen. Der Beweis zeigt, dass ein Element diese Eigenschaften hat, ohne das Element oder Sie preiszugeben.",
+    "pickEvidence": "Wählen Sie einen Beweis aus",
+    "slotMin": "Frühester Slot",
+    "slotMax": "Spätester Slot",
+    "lat": "Breitengrad",
+    "lon": "Längengrad",
+    "slotOutOfRange": "Der Verankerungs-Slot liegt außerhalb des gewählten Bereichs.",
+    "generate": "Beweis erzeugen",
+    "generating": "Erzeuge…",
+    "result": "Beweis",
+    "publicSignals": "Öffentliche Signale (teilbar):",
+    "download": "Beweis herunterladen"
+  },
+  "settings": {
+    "title": "Einstellungen",
+    "preferences": "Präferenzen",
+    "region": "Region",
+    "highContrast": "Hoher Kontrast",
+    "identity": "Identität",
+    "publicKey": "Öffentlicher Schlüssel",
+    "lock": "Tresor jetzt sperren",
+    "burnTitle": "Diese Identität zerstören",
+    "burnBody": "Dies zerstört dauerhaft die Schlüssel und Beweise auf diesem Gerät. Verankerte Hashes bleiben auf Solana, können Ihnen aber nicht mehr zugeordnet werden. Nicht umkehrbar.",
+    "burnStart": "Identität zerstören",
+    "burnConfirm1": "Sicher? Alles auf diesem Gerät wird gelöscht.",
+    "burnContinue": "Weiter",
+    "burnTypePrompt": "Tippen Sie BURN zur Bestätigung",
+    "burnFinal": "Jetzt zerstören"
+  },
+  "emergency": {
+    "buttonLabel": "Notfalloptionen öffnen",
+    "confirmTitle": "Brauchen Sie jetzt Hilfe?",
+    "confirmBody": "Tippen Sie auf die Nummer, um Ihren örtlichen Notruf anzurufen, oder öffnen Sie eine Hilferessource.",
+    "localNumber": "Örtliche Notrufnummer"
+  },
+  "common": {
+    "continue": "Weiter",
+    "cancel": "Abbrechen",
+    "close": "Schließen",
+    "loading": "Arbeite…",
+    "saving": "Speichere…",
+    "saved": "Gespeichert",
+    "error": "Etwas ist schiefgelaufen. Bitte erneut versuchen."
+  },
+  "legal": {
+    "erasure": "Sie haben das Recht auf Löschung. Das Zerstören Ihrer Identität entfernt die Schlüssel, die Sie mit verankerten Beweisen auf diesem Gerät verbinden."
+  }
+}

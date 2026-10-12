@@ -1,0 +1,111 @@
+{
+  "app": {
+    "name": "Prutet",
+    "tagline": "A calm place to keep evidence safe."
+  },
+  "nav": {
+    "label": "Main navigation",
+    "home": "Home",
+    "evidence": "Evidence",
+    "proof": "Generate proof",
+    "settings": "Settings"
+  },
+  "home": {
+    "tagline": "Capture, encrypt, and anchor — without revealing who you are.",
+    "privacyNote": "Everything is encrypted on this device before it goes anywhere else."
+  },
+  "onboarding": {
+    "title": "Set up Prutet",
+    "intro1": "Prutet generates a fresh on-chain identity that is not linked to your name, email, or phone.",
+    "intro2": "You will choose a passcode that protects everything stored on this device.",
+    "bullet1": "No accounts, no servers, no profiles.",
+    "bullet2": "Evidence is encrypted before it leaves your device.",
+    "bullet3": "You can burn this identity at any time.",
+    "prefsHelp": "Pick the language, region, and contrast that suit you. You can change these later.",
+    "passcodeHelp": "Choose at least eight characters. There is no recovery — only your passcode unlocks the vault.",
+    "passcode": "Passcode",
+    "passcodeConfirm": "Repeat passcode",
+    "passcodeTooShort": "Use at least eight characters.",
+    "passcodeMismatch": "The passcodes do not match.",
+    "passcodeWarn": "If you forget this passcode, the vault on this device cannot be recovered.",
+    "create": "Create my vault"
+  },
+  "lock": {
+    "title": "Welcome back",
+    "subtitle": "Enter your passcode to unlock the vault.",
+    "passcode": "Passcode",
+    "unlock": "Unlock",
+    "error": "That passcode did not work."
+  },
+  "evidence": {
+    "title": "Evidence",
+    "record": "Record evidence",
+    "recorded": "Saved and anchored.",
+    "lockedFirst": "Unlock the vault first.",
+    "empty": "No evidence yet. Tap Record when you need to.",
+    "localOnly": "Local only",
+    "previewAlt": "Encrypted evidence preview",
+    "contentHash": "Content hash",
+    "nonce": "Nonce",
+    "anchorTx": "Anchor transaction",
+    "anchorPda": "Anchor account",
+    "cid": "IPFS CID",
+    "makeProof": "Make a proof",
+    "revoke": "Revoke and delete",
+    "phase": {
+      "capturing": "Reading file…",
+      "encrypting": "Encrypting…",
+      "anchoring": "Anchoring on Solana…",
+      "pinning": "Pinning to IPFS…"
+    }
+  },
+  "proof": {
+    "title": "Generate proof",
+    "intro": "Share what you choose, nothing more. The proof shows that an item exists with these properties without revealing the item or who you are.",
+    "pickEvidence": "Pick an evidence item from",
+    "slotMin": "Earliest slot",
+    "slotMax": "Latest slot",
+    "lat": "Latitude",
+    "lon": "Longitude",
+    "slotOutOfRange": "The anchor slot is outside the chosen range.",
+    "generate": "Generate proof",
+    "generating": "Generating proof…",
+    "result": "Proof",
+    "publicSignals": "Public signals (safe to share):",
+    "download": "Download proof"
+  },
+  "settings": {
+    "title": "Settings",
+    "preferences": "Preferences",
+    "region": "Region",
+    "highContrast": "High-contrast mode",
+    "identity": "Identity",
+    "publicKey": "Public key",
+    "lock": "Lock vault now",
+    "burnTitle": "Burn this identity",
+    "burnBody": "This permanently destroys the keys and evidence on this device. Anchored hashes remain on Solana but can no longer be linked to you. This cannot be undone.",
+    "burnStart": "Burn identity",
+    "burnConfirm1": "Are you sure? Everything on this device will be erased.",
+    "burnContinue": "Continue",
+    "burnTypePrompt": "Type BURN to confirm",
+    "burnFinal": "Burn now"
+  },
+  "emergency": {
+    "buttonLabel": "Open emergency options",
+    "confirmTitle": "Need help right now?",
+    "confirmBody": "Tap the number below to call your local emergency line, or open a support resource.",
+    "localNumber": "Local emergency number"
+  },
+  "common": {
+    "continue": "Continue",
+    "cancel": "Cancel",
+    "close": "Close",
+    "loading": "Working…",
+    "saving": "Saving…",
+    "saved": "Saved",
+    "error": "Something went wrong. Please try again."
+  },
+  "legal": {
+    "erasure": "You have the right to erasure. Burning your identity removes the keys that link you to anchored evidence on this device."
+  }
+}
